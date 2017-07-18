@@ -5,8 +5,8 @@ Interface web qui permet de réaliser des requêtes Analytics PureCloud en se ba
 Il suffit de copier ce fichier sur un serveur web statique.
 
 # Configuration
-Il faut créer un tocket Implicit 'OAuth' : https://developer.mypurecloud.com/api/rest/authorization/use-implicit-grant.html et indiquer le `clientId` dans le fichier 
-`public/js/script.js` à l'emplacement suivant :
+Il faut créer un tocket Implicit 'OAuth' : https://developer.mypurecloud.com/api/rest/authorization/use-implicit-grant.html et indiquer le `clientId` dans le fichier
+`public/stats_by_group/js/script.js` à l'emplacement suivant :
 ```
 var pureCloudSession = purecloud.platform.PureCloudSession({
   strategy: 'implicit',
