@@ -236,10 +236,10 @@ $(document).ready(function() {
           <td>'+(nOffered?nOffered.stats.count:0)+'</td> \
           <td>'+(tHandle?tHandle.stats.count:0)+'</td> \
           <td>'+(tAbandon?tAbandon.stats.count:0)+'</td> \
-          <td>'+(tAcd?(moment(tAcd.stats.sum/tAcd.stats.count, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tAcd?(moment(tAcd.stats.max, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tTalk?(moment(tTalk.stats.sum/tTalk.stats.count, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tTalk?(moment(tTalk.stats.max, 'x').format("mm:SS")):0)+'</td> \
+          <td>'+(tAcd?(moment.utc(tAcd.stats.sum/tAcd.stats.count).format("mm:ss")):0)+'</td> \
+          <td>'+(tAcd?(moment.utc(tAcd.stats.max).format("mm:ss")):0)+'</td> \
+          <td>'+(tTalk?(moment.utc(tTalk.stats.sum/tTalk.stats.count).format("mm:ss")):0)+'</td> \
+          <td>'+(tTalk?(moment.utc(tTalk.stats.max).format("mm:ss")):0)+'</td> \
         </tr>');
 
 
@@ -274,10 +274,10 @@ $(document).ready(function() {
           <td>'+(nOffered?nOffered.stats.count:0)+'</td> \
           <td>'+(tHandle?tHandle.stats.count:0)+'</td> \
           <td>'+(tAbandon?tAbandon.stats.count:0)+'</td> \
-          <td>'+(tAcd?(moment(tAcd.stats.sum/tAcd.stats.count, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tAcd?(moment(tAcd.stats.max, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tTalk?(moment(tTalk.stats.sum/tTalk.stats.count, 'x').format("mm:SS")):0)+'</td> \
-          <td>'+(tTalk?(moment(tTalk.stats.max, 'x').format("mm:SS")):0)+'</td> \
+          <td>'+(tAcd?(moment.utc(tAcd.stats.sum/tAcd.stats.count).format("mm:ss")):0)+'</td> \
+          <td>'+(tAcd?(moment.utc(tAcd.stats.max).format("mm:ss")):0)+'</td> \
+          <td>'+(tTalk?(moment.utc(tTalk.stats.sum/tTalk.stats.count).format("mm:ss")):0)+'</td> \
+          <td>'+(tTalk?(moment.utc(tTalk.stats.max).format("mm:ss")):0)+'</td> \
         </tr>');
 
       anayticsForDay();
@@ -317,10 +317,10 @@ $(document).ready(function() {
               <td>'+(nOffered?nOffered.stats.count:0)+'</td> \
               <td>'+(tHandle?tHandle.stats.count:0)+'</td> \
               <td>'+(tAbandon?tAbandon.stats.count:0)+'</td> \
-              <td>'+(tAcd?(moment(tAcd.stats.sum/tAcd.stats.count, 'x').format("mm:SS")):0)+'</td> \
-              <td>'+(tAcd?(moment(tAcd.stats.max, 'x').format("mm:SS")):0)+'</td> \
-              <td>'+(tTalk?(moment(tTalk.stats.sum/tTalk.stats.count, 'x').format("mm:SS")):0)+'</td> \
-              <td>'+(tTalk?(moment(tTalk.stats.max, 'x').format("mm:SS")):0)+'</td> \
+              <td>'+(tAcd?(moment.utc(tAcd.stats.sum/tAcd.stats.count).format("mm:ss")):0)+'</td> \
+              <td>'+(tAcd?(moment.utc(tAcd.stats.max).format("mm:ss")):0)+'</td> \
+              <td>'+(tTalk?(moment.utc(tTalk.stats.sum/tTalk.stats.count).format("mm:ss")):0)+'</td> \
+              <td>'+(tTalk?(moment.utc(tTalk.stats.max).format("mm:ss")):0)+'</td> \
             </tr>');
       	}else{
           // S'il n'y avait pas de donnée pour ce créneau
